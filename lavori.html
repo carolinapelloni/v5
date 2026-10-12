@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I progetti — Studio Tecnico</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <span class="logo-mark">S.</span>
+    <span>STUDIO<small>INGEGNERIA & PROGETTO</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Apri menu"
+          aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="lavori.html" aria-current="page">Progetti</a>
+    <a href="servizi.html">Attività</a>
+    <a href="contatti.html">Contatti</a>
+    <a class="button button-dark" href="consulenza.html">
+      Prenota una consulenza ↗
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">PORTFOLIO</span>
+      <h1>Ogni progetto<br>ha una storia.</h1>
+      <p>
+        Architettura, strutture e riqualificazione.
+        Una selezione di idee, materiali e soluzioni progettuali.
+      </p>
+    </div>
+  </section>
+
+  <section class="section portfolio-section">
+    <div class="portfolio-filters" aria-label="Filtra i progetti">
+      <button class="filter-btn" data-filter="tutti" aria-pressed="true">
+        Tutti
+      </button>
+      <button class="filter-btn" data-filter="case" aria-pressed="false">
+        Abitazioni
+      </button>
+      <button class="filter-btn" data-filter="strutture" aria-pressed="false">
+        Strutture
+      </button>
+      <button class="filter-btn" data-filter="ristrutturazioni" aria-pressed="false">
+        Riqualificazione
+      </button>
+    </div>
+
+    <div class="project-grid portfolio-grid">
+
+      <article class="project-card" data-category="case">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+               alt="Villa moderna con giardino">
+          <span class="project-number">01</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Casa Luce</h3>
+            <p>Progettazione residenziale</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="strutture">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=85"
+               alt="Geometrie di un edificio contemporaneo">
+          <span class="project-number">02</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Materia in equilibrio</h3>
+            <p>Strutture e dettagli tecnici</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ristrutturazioni">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+               alt="Abitazione rinnovata con grandi aperture">
+          <span class="project-number">03</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Nuova prospettiva</h3>
+            <p>Riqualificazione edilizia</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="case">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+               alt="Interni di una residenza contemporanea">
+          <span class="project-number">04</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Calma essenziale</h3>
+            <p>Spazi residenziali</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="strutture">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85"
+               alt="Facciata architettonica con geometrie moderne">
+          <span class="project-number">05</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Segni di struttura</h3>
+            <p>Architettura e materiali</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ristrutturazioni">
+        <div class="project-image">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+               alt="Ambiente contemporaneo riqualificato">
+          <span class="project-number">06</span>
+        </div>
+        <div class="project-info">
+          <div>
+            <h3>Interni in dialogo</h3>
+            <p>Rinnovamento degli spazi</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="portfolio-note">
+      Nota: le immagini sono riferimenti illustrativi, non documentazione
+      di lavori realmente eseguiti dallo studio.
+    </p>
+  </section>
+
+  <section class="contact-banner">
+    <div>
+      <span class="eyebrow">HAI UN PROGETTO?</span>
+      <h2>Parliamone insieme.</h2>
+      <p>Il prossimo progetto può iniziare da una semplice conversazione.</p>
+    </div>
+    <a class="button button-dark" href="consulenza.html">
+      Richiedi una consulenza ↗
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Studio Tecnico</span>
+    <a href="contatti.html">Contatti ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatti — Studio Tecnico</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <span class="logo-mark">S.</span>
+    <span>STUDIO<small>INGEGNERIA & PROGETTO</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Apri menu"
+          aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="lavori.html">Progetti</a>
+    <a href="servizi.html">Attività</a>
+    <a href="contatti.html" aria-current="page">Contatti</a>
+    <a class="button button-dark" href="consulenza.html">
+      Prenota una consulenza ↗
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">PARLIAMONE</span>
+      <h1>Le buone idee<br>iniziano da un dialogo.</h1>
+      <p>
+        Per informazioni, collaborazioni o richieste tecniche,
+        siamo a disposizione per ascoltare le tue esigenze.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="contact-layout">
+      <aside class="contact-panel">
+        <span class="eyebrow light">RESTIAMO IN CONTATTO</span>
+        <h2>Come possiamo aiutarti?</h2>
+        <p>
+          Raccontaci il progetto e il tipo di supporto di cui hai bisogno.
+          Ti risponderemo per concordare i prossimi passi.
+        </p>
+
+        <div class="contact-line">
+          <strong>Email</strong><br>
+          <a href="mailto:info@tuostudio.it">info@tuostudio.it</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>Telefono</strong><br>
+          <a href="tel:+390000000000">+39 000 000 0000</a>
+        </div>
+
+        <div class="contact-line">
+          <strong>Ricevimento</strong><br>
+          Su appuntamento
+        </div>
+
+        <div class="contact-line">
+          <strong>Zona operativa</strong><br>
+          Inserisci qui città e province servite
+        </div>
+      </aside>
+
+      <form class="form-card" data-contact-form>
+        <h2>Scrivici un messaggio.</h2>
+
+        <div class="field">
+          <label for="nome">Nome e cognome *</label>
+          <input id="nome" name="nome" required
+                 autocomplete="name" placeholder="Il tuo nome">
+        </div>
+
+        <div class="field">
+          <label for="email">Indirizzo email *</label>
+          <input id="email" name="email" type="email"
+                 autocomplete="email" required
+                 placeholder="nome@email.it">
+        </div>
+
+        <div class="field">
+          <label for="telefono">Telefono</label>
+          <input id="telefono" name="telefono" type="tel"
+                 autocomplete="tel" placeholder="Il tuo numero">
+        </div>
+
+        <div class="field">
+          <label for="servizio">Argomento</label>
+          <select id="servizio" name="servizio">
+            <option>Richiesta informazioni</option>
+            <option>Progettazione</option>
+            <option>Strutture in acciaio o cemento</option>
+            <option>Ristrutturazione</option>
+            <option>Consulenza tecnica</option>
+            <option>Collaborazioni professionali</option>
+            <option>Altro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="messaggio">Il tuo messaggio *</label>
+          <textarea id="messaggio" name="messaggio"
+                    required placeholder="Scrivi qui la tua richiesta..."></textarea>
+        </div>
+
+        <button class="button button-dark" type="submit">
+          Prepara email ↗
+        </button>
+
+        <p class="form-status" role="status" hidden></p>
+        <p class="form-note">
+          Il messaggio verrà preparato nel programma email configurato
+          sul tuo dispositivo.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--white)">
+    <span class="eyebrow">DOMANDE FREQUENTI</span>
+    <h2>Prima di contattarci.</h2>
+
+    <div class="faq">
+      <details>
+        <summary>Posso chiedere una consulenza senza un progetto definitivo?</summary>
+        <p>
+          Sì. Puoi contattarci anche in fase preliminare per illustrare
+          l'idea e valutare quali informazioni siano necessarie.
+        </p>
+      </details>
+
+      <details>
+        <summary>È disponibile un listino prezzi?</summary>
+        <p>
+          Le attività professionali sono elencate nella pagina Servizi,
+          senza prezzi standard. L'eventuale offerta viene definita
+          sulla base dell'incarico e delle esigenze specifiche.
+        </p>
+      </details>
+
+      <details>
+        <summary>Posso richiedere una valutazione strutturale?</summary>
+        <p>
+          Puoi inviare una richiesta descrivendo l'immobile,
+          la struttura interessata e la documentazione disponibile.
+          Le modalità dell'incarico verranno concordate direttamente.
+        </p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Studio Tecnico</span>
+    <a href="index.html">Torna alla home ↗</a>
+  </div>
+</footer>
+
+</body>
+</html>
